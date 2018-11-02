@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "latest", {
+        "es2015": {
+          "modules": false
+        }
+      }
+    ],
+    "react",
+    "stage-3"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-runtime",
+    "transform-class-properties",
+    "transform-function-bind",
+    "transform-decorators-legacy",
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": false }]
+  ],
+  "env": {
+    "build": {
+      "optional": ["optimisation", "minification"]
+    }
+  }
+}
